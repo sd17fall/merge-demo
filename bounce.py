@@ -3,6 +3,7 @@ import pygame
 
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
+BLUE = (0, 255, 0)
 
 pygame.init()
 os.environ['SDL_VIDEO_WINDOW_POS'] = "0,0"
@@ -87,7 +88,7 @@ screen = pygame.display.set_mode((640, 240))
 world_controller = WorldController()
 
 ball1 = Ball(320, 240, radius=800)
-ball2 = Ball(550, 140, radius=600, color=(0, 255, 0))
+ball2 = Ball(550, 140, radius=600, color=BLUE)
 ball3 = Ball(100, 140, radius=400, color=(0, 127, 255))
 
 balls = [ball1, ball2, ball3]
